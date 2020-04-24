@@ -1,3 +1,7 @@
+## Management system
+리액트공부 하면서 고객관리 시스템을 만들어 봅니다. 
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
