@@ -4,9 +4,33 @@ class Customer extends React.Component {
     render(){
         return(
             <div> 
-                <p> {this.props.name} </p>
-                <p> {this.props.age} </p>
+               <CustomerProfile id={this.props.id} name={this.props.name} image={this.props.image} />
+               <CustomerInfo  age={this.props.age} gender={this.props.gender}/>
+            </div>
+        )
+    }
+}
+
+
+
+class CustomerInfo extends React.Component {
+    render(){
+        return(
+            <div>
+                <p> {this.props.age + "대"} </p>
                 <p> {this.props.gender} </p>
+            </div>
+        )
+    }
+}
+
+
+class CustomerProfile extends React.Component {
+    render(){
+        return(
+            <div>
+                <img src={this.props.image} alt="profile"/>
+                <h2>{this.props.name} ({this.props.id})</h2>
             </div>
         )
     }
