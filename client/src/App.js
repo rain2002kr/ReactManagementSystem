@@ -21,6 +21,11 @@ const styles = theme => ({
   }
 });
 
+
+
+//public images 폴더 경로 <img src={"images/react.png"} alt={"react"}/>
+//src 경로 <img src={'react.png'} alt={"react"}/>
+
 const customer = [
   {
   'id' :'1',
@@ -28,20 +33,25 @@ const customer = [
   'age' : '50',
   'gender' : '여성',
   'image' : img_react, //값으로 가져가려면, public에 이미지넣어야 함. 
-  },
+  'image_inside' : "./images/react.png"
+},
 {  'id' :'2',
   'name' : '강남길' ,
   'age' : '60',
   'gender' : '남성',
   'image' : img_react, //값으로 가져가려면, public에 이미지넣어야 함. 
-  },
+  'image_inside' : "./images/react.png"
+},
 {  'id' :'3',
   'name' : '이민정' ,
   'age' : '30',
   'gender' : '여성',
   'image' : img_react, //값으로 가져가려면, public에 이미지넣어야 함. 
-  }
+  'image_inside' : "./images/react.png"
+
+}
 ]
+
 
 class App extends Component {
   render() {
